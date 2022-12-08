@@ -1,0 +1,1318 @@
+{
+  "home_assistant": {
+    "installation_type": "Home Assistant Core",
+    "version": "2022.11.5",
+    "dev": false,
+    "hassio": false,
+    "virtualenv": true,
+    "python_version": "3.9.2",
+    "docker": false,
+    "arch": "aarch64",
+    "timezone": "America/New_York",
+    "os_name": "Linux",
+    "os_version": "5.15.76-v8+",
+    "run_as_root": false
+  },
+  "custom_components": {
+    "hacs": {
+      "version": "1.28.4",
+      "requirements": [
+        "aiogithubapi>=22.2.4"
+      ]
+    }
+  },
+  "integration_manifest": {
+    "domain": "homekit",
+    "name": "HomeKit",
+    "documentation": "https://www.home-assistant.io/integrations/homekit",
+    "requirements": [
+      "ha-HAP-python==4.5.2",
+      "fnvhash==0.1.0",
+      "PyQRCode==1.2.1",
+      "base36==0.1.1"
+    ],
+    "dependencies": [
+      "ffmpeg",
+      "http",
+      "network"
+    ],
+    "after_dependencies": [
+      "camera",
+      "zeroconf"
+    ],
+    "codeowners": [
+      "@bdraco"
+    ],
+    "zeroconf": [
+      "_homekit._tcp.local."
+    ],
+    "config_flow": true,
+    "iot_class": "local_push",
+    "loggers": [
+      "pyhap"
+    ],
+    "is_built_in": true
+  },
+  "data": {
+    "status": 1,
+    "config-entry": {
+      "title": "HASS Bridge:21064",
+      "version": 1,
+      "data": {
+        "name": "HASS Bridge",
+        "exclude_accessory_mode": true,
+        "port": 21064
+      },
+      "options": {
+        "filter": {
+          "include_domains": [
+            "alarm_control_panel",
+            "climate",
+            "cover",
+            "humidifier",
+            "fan",
+            "light",
+            "lock",
+            "media_player",
+            "remote",
+            "switch",
+            "vacuum",
+            "water_heater"
+          ],
+          "exclude_domains": [],
+          "include_entities": [],
+          "exclude_entities": []
+        },
+        "mode": "bridge"
+      }
+    },
+    "iid_storage": {
+      "1": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "A2___": 8,
+        "A2__37_": 9
+      },
+      "887744759": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "4A___": 8,
+        "4A__F_": 9,
+        "4A__33_": 10,
+        "4A__11_": 11,
+        "4A__35_": 12,
+        "4A__36_": 13,
+        "4A__D_": 14,
+        "4A__12_": 15,
+        "B7___": 16,
+        "B7__B0_": 17,
+        "B7__BF_": 18,
+        "B7__AF_": 19
+      },
+      "2980594693": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "4A___": 8,
+        "4A__F_": 9,
+        "4A__33_": 10,
+        "4A__11_": 11,
+        "4A__35_": 12,
+        "4A__36_": 13,
+        "4A__D_": 14,
+        "4A__12_": 15,
+        "B7___": 16,
+        "B7__B0_": 17,
+        "B7__BF_": 18,
+        "B7__AF_": 19
+      },
+      "1487942448": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "49_play_pause__": 8,
+        "49_play_pause_25_": 9,
+        "49_play_pause_23_": 10,
+        "49_play_stop__": 11,
+        "49_play_stop_25_": 12,
+        "49_play_stop_23_": 13,
+        "49_toggle_mute__": 14,
+        "49_toggle_mute_25_": 15,
+        "49_toggle_mute_23_": 16
+      },
+      "3128378382": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "49_on_off__": 8,
+        "49_on_off_25_": 9,
+        "49_on_off_23_": 10,
+        "49_play_pause__": 11,
+        "49_play_pause_25_": 12,
+        "49_play_pause_23_": 13,
+        "49_play_stop__": 14,
+        "49_play_stop_25_": 15,
+        "49_play_stop_23_": 16
+      },
+      "3573808780": {
+        "3E__14_": 2,
+        "3E__20_": 3,
+        "3E__21_": 4,
+        "3E__23_": 5,
+        "3E__30_": 6,
+        "3E__52_": 7,
+        "49___": 8,
+        "49__25_": 9
+      }
+    },
+    "bridge": {
+      "887744759": {
+        "aid": 887744759,
+        "config": {
+          "manufacturer": "ecobee",
+          "model": "ecobee3 lite Smart Thermostat",
+          "platform": "ecobee"
+        },
+        "category": 9,
+        "name": "Basement",
+        "entity_id": "climate.basement",
+        "entity_state": {
+          "entity_id": "climate.basement",
+          "state": "heat",
+          "attributes": {
+            "hvac_modes": [
+              "heat_cool",
+              "heat",
+              "cool",
+              "off"
+            ],
+            "min_temp": 44.6,
+            "max_temp": 95.0,
+            "target_temp_step": 0.5,
+            "fan_modes": [
+              "auto",
+              "on"
+            ],
+            "preset_modes": [
+              "Away",
+              "Home",
+              "Sleep"
+            ],
+            "current_temperature": 68.3,
+            "temperature": 68.0,
+            "target_temp_high": null,
+            "target_temp_low": null,
+            "current_humidity": 54,
+            "fan_mode": "auto",
+            "hvac_action": "idle",
+            "preset_mode": "Home",
+            "aux_heat": "off",
+            "fan": "off",
+            "climate_mode": "Home",
+            "equipment_running": "",
+            "fan_min_on_time": 0,
+            "friendly_name": "Basement",
+            "supported_features": 91
+          },
+          "last_changed": "2022-12-08T20:21:42.666910+00:00",
+          "last_updated": "2022-12-08T20:43:42.755450+00:00",
+          "context": {
+            "id": "01GKSQNKS3FCEDSWHH7YNFR8K6",
+            "parent_id": null,
+            "user_id": null
+          }
+        }
+      },
+      "2980594693": {
+        "aid": 2980594693,
+        "config": {
+          "manufacturer": "ecobee",
+          "model": "ecobee Smart Premium Thermostat",
+          "platform": "ecobee"
+        },
+        "category": 9,
+        "name": "Main Floor",
+        "entity_id": "climate.main_floor",
+        "entity_state": {
+          "entity_id": "climate.main_floor",
+          "state": "heat",
+          "attributes": {
+            "hvac_modes": [
+              "heat_cool",
+              "heat",
+              "cool",
+              "off"
+            ],
+            "min_temp": 44.6,
+            "max_temp": 95.0,
+            "target_temp_step": 0.5,
+            "fan_modes": [
+              "auto",
+              "on"
+            ],
+            "preset_modes": [
+              "Away",
+              "Home",
+              "Sleep"
+            ],
+            "current_temperature": 68.9,
+            "temperature": 68.0,
+            "target_temp_high": null,
+            "target_temp_low": null,
+            "current_humidity": 58,
+            "fan_mode": "auto",
+            "hvac_action": "idle",
+            "preset_mode": "temp",
+            "aux_heat": "off",
+            "fan": "off",
+            "climate_mode": "Home",
+            "equipment_running": "",
+            "fan_min_on_time": 0,
+            "friendly_name": "Main Floor",
+            "supported_features": 91
+          },
+          "last_changed": "2022-12-08T20:21:42.668140+00:00",
+          "last_updated": "2022-12-08T20:43:42.756804+00:00",
+          "context": {
+            "id": "01GKSQNKS46V97D11CK5TDN4ZP",
+            "parent_id": null,
+            "user_id": null
+          }
+        }
+      },
+      "1487942448": {
+        "aid": 1487942448,
+        "config": {
+          "manufacturer": "Sonos",
+          "model": "Play:1",
+          "sw_version": "14.20",
+          "platform": "sonos"
+        },
+        "category": 8,
+        "name": "Office",
+        "entity_id": "media_player.office",
+        "entity_state": {
+          "entity_id": "media_player.office",
+          "state": "playing",
+          "attributes": {
+            "group_members": [
+              "media_player.office"
+            ],
+            "volume_level": 0.1,
+            "is_volume_muted": false,
+            "media_content_id": "aac://http://ice2.somafm.com/groovesalad-128-aac",
+            "media_content_type": "music",
+            "media_title": "Sandy Beach",
+            "media_artist": "Lemongrass",
+            "media_channel": "SomaFM: Groove Salad",
+            "shuffle": false,
+            "repeat": "off",
+            "queue_position": 1,
+            "queue_size": 9,
+            "entity_picture": "/api/media_player_proxy/media_player.office?token=5c23655747f94fcb5c7268c66407713bf01d64a09ece45c728238d162c042e40&cache=6ccaa723878d3dd2",
+            "friendly_name": "Office",
+            "supported_features": 981567
+          },
+          "last_changed": "2022-12-08T20:21:42.763199+00:00",
+          "last_updated": "2022-12-08T20:44:04.603699+00:00",
+          "context": {
+            "id": "01GKSQP93V3S20F6A3X6C1MZN2",
+            "parent_id": null,
+            "user_id": null
+          }
+        }
+      },
+      "3128378382": {
+        "aid": 3128378382,
+        "config": {
+          "manufacturer": "Apple",
+          "model": "Apple TV 3",
+          "sw_version": "8.4.4",
+          "platform": "apple_tv"
+        },
+        "category": 8,
+        "name": "Apple TV",
+        "entity_id": "media_player.apple_tv",
+        "entity_state": {
+          "entity_id": "media_player.apple_tv",
+          "state": "idle",
+          "attributes": {
+            "volume_level": 0.33,
+            "media_duration": 0,
+            "friendly_name": "Apple TV",
+            "supported_features": 448439
+          },
+          "last_changed": "2022-12-08T20:23:08.752657+00:00",
+          "last_updated": "2022-12-08T20:23:08.752657+00:00",
+          "context": {
+            "id": "01GKSPFYPG1D9E0KY8PFWHR95X",
+            "parent_id": null,
+            "user_id": null
+          }
+        }
+      },
+      "3573808780": {
+        "aid": 3573808780,
+        "config": {
+          "manufacturer": "Apple",
+          "model": "Apple TV 3",
+          "sw_version": "8.4.4",
+          "platform": "apple_tv"
+        },
+        "category": 8,
+        "name": "Apple TV",
+        "entity_id": "remote.apple_tv",
+        "entity_state": {
+          "entity_id": "remote.apple_tv",
+          "state": "on",
+          "attributes": {
+            "friendly_name": "Apple TV",
+            "supported_features": 0
+          },
+          "last_changed": "2022-12-08T20:23:08.726157+00:00",
+          "last_updated": "2022-12-08T20:23:08.726157+00:00",
+          "context": {
+            "id": "01GKSPFYJ9J7MMC5FD8B17VF8N",
+            "parent_id": null,
+            "user_id": "ba7fb74036934161ab95d87ad8d55d16"
+          }
+        }
+      }
+    },
+    "accessories": [
+      {
+        "aid": 1,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Home Assistant"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Bridge"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "HASS Bridge"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "homekit.bridge"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "2022.11.5"
+              }
+            ]
+          },
+          {
+            "iid": 8,
+            "type": "A2",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "37",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "string",
+                "value": "01.01.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "aid": 887744759,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "ecobee"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "ecobee3 lite Smart Thermostat"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Basement"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "climate.basement"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "2022.11.5"
+              }
+            ],
+            "primary": false
+          },
+          {
+            "iid": 8,
+            "type": "4A",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "F",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1,
+                  2
+                ],
+                "value": 0
+              },
+              {
+                "iid": 10,
+                "type": "33",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "value": 1
+              },
+              {
+                "iid": 11,
+                "type": "11",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 1000,
+                "minStep": 0.1,
+                "minValue": -273.1,
+                "unit": "celsius",
+                "value": 20.2
+              },
+              {
+                "iid": 12,
+                "type": "35",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 20.0
+              },
+              {
+                "iid": 13,
+                "type": "36",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 14,
+                "type": "D",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 23.0
+              },
+              {
+                "iid": 15,
+                "type": "12",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 19.0
+              }
+            ],
+            "primary": true,
+            "linked": [
+              16
+            ]
+          },
+          {
+            "iid": 16,
+            "type": "B7",
+            "characteristics": [
+              {
+                "iid": 17,
+                "type": "B0",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 18,
+                "type": "BF",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "description": "Fan Auto",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 19,
+                "type": "AF",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "uint8",
+                "description": "Fan State",
+                "valid-values": [
+                  0,
+                  1,
+                  2
+                ],
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "aid": 2980594693,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "ecobee"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "ecobee Smart Premium Thermostat"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Main Floor"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "climate.main_floor"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "2022.11.5"
+              }
+            ],
+            "primary": false
+          },
+          {
+            "iid": 8,
+            "type": "4A",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "F",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1,
+                  2
+                ],
+                "value": 0
+              },
+              {
+                "iid": 10,
+                "type": "33",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "value": 1
+              },
+              {
+                "iid": 11,
+                "type": "11",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 1000,
+                "minStep": 0.1,
+                "minValue": -273.1,
+                "unit": "celsius",
+                "value": 20.5
+              },
+              {
+                "iid": 12,
+                "type": "35",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 20.0
+              },
+              {
+                "iid": 13,
+                "type": "36",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 14,
+                "type": "D",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 23.0
+              },
+              {
+                "iid": 15,
+                "type": "12",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "float",
+                "maxValue": 35.0,
+                "minStep": 0.1,
+                "minValue": 7.0,
+                "unit": "celsius",
+                "value": 19.0
+              }
+            ],
+            "primary": true,
+            "linked": [
+              16
+            ]
+          },
+          {
+            "iid": 16,
+            "type": "B7",
+            "characteristics": [
+              {
+                "iid": 17,
+                "type": "B0",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 18,
+                "type": "BF",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "uint8",
+                "description": "Fan Auto",
+                "valid-values": [
+                  0,
+                  1
+                ],
+                "value": 1
+              },
+              {
+                "iid": 19,
+                "type": "AF",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "format": "uint8",
+                "description": "Fan State",
+                "valid-values": [
+                  0,
+                  1,
+                  2
+                ],
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "aid": 1487942448,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Sonos"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Play:1"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Office"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "media_player.office"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "14.20"
+              }
+            ]
+          },
+          {
+            "iid": 8,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": true
+              },
+              {
+                "iid": 10,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Office Play-Pause"
+              }
+            ]
+          },
+          {
+            "iid": 11,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 12,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": true
+              },
+              {
+                "iid": 13,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Office Play-Stop"
+              }
+            ]
+          },
+          {
+            "iid": 14,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 15,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": false
+              },
+              {
+                "iid": 16,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Office Mute"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "aid": 3128378382,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV 3"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "media_player.apple_tv"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "8.4.4"
+              }
+            ]
+          },
+          {
+            "iid": 8,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": true
+              },
+              {
+                "iid": 10,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV Power"
+              }
+            ]
+          },
+          {
+            "iid": 11,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 12,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": false
+              },
+              {
+                "iid": 13,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV Play-Pause"
+              }
+            ]
+          },
+          {
+            "iid": 14,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 15,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": false
+              },
+              {
+                "iid": 16,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV Play-Stop"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "aid": 3573808780,
+        "services": [
+          {
+            "iid": 1,
+            "type": "3E",
+            "characteristics": [
+              {
+                "iid": 2,
+                "type": "14",
+                "perms": [
+                  "pw"
+                ],
+                "format": "bool"
+              },
+              {
+                "iid": 3,
+                "type": "20",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple"
+              },
+              {
+                "iid": 4,
+                "type": "21",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV 3"
+              },
+              {
+                "iid": 5,
+                "type": "23",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "Apple TV"
+              },
+              {
+                "iid": 6,
+                "type": "30",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "remote.apple_tv"
+              },
+              {
+                "iid": 7,
+                "type": "52",
+                "perms": [
+                  "pr"
+                ],
+                "format": "string",
+                "value": "8.4.4"
+              }
+            ]
+          },
+          {
+            "iid": 8,
+            "type": "49",
+            "characteristics": [
+              {
+                "iid": 9,
+                "type": "25",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "format": "bool",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "client_properties": {},
+    "config_version": 2,
+    "pairing_id": "66:32:EA:31:3D:2F"
+  }
+}
